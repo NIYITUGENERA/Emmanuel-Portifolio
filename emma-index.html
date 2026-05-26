@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmanuel NIYITUGENERA — Software Engineer</title>
+  <link href="emma-styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="./emma-index.html">Emma<span>Site</span></a>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="./emma-index.html">Home</a>
+        <a href="#about">Who is Emma?</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Inbox</a>
+      </nav>
+      <div class="header-actions">
+        <button class="search-btn" onclick="toggleSearch()" aria-label="Search">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="menu-btn" id="menu-btn" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Search bar (hidden by default) -->
+    <div class="search-bar" id="search-bar">
+      <input type="text" placeholder="Search anything…" id="search-input" />
+      <button onclick="toggleSearch()">✕</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Software Engineer · Rwanda</p>
+        <h1 class="hero-name">Emmanuel<br>NIYITUGENERA</h1>
+        <p class="hero-role">Building digital solutions<br>for real-world problems.</p>
+        <p class="hero-bio">
+          Every line of code I write asks: <em>"how can this help the people around me?"</em>
+          I build with intention — turning ideas into software that matters.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">See My Work</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="./EmmanuelNIYITUGENERA.PIC.png" alt="Emmanuel NIYITUGENERA" class="profile-pic" draggable="false" />
+        </div>
+        <div class="image-tag">AUCA University · CS</div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓ scroll</div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip">
+    <div class="strip-inner">
+      <div class="strip-card">
+        <div class="strip-icon">💻</div>
+        <div class="strip-label">Web Developer</div>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-card">
+        <div class="strip-icon">🎓</div>
+        <div class="strip-label">Bachelor's Degree</div>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-card">
+        <div class="strip-icon">🌍</div>
+        <div class="strip-label">Based in Rwanda</div>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-card">
+        <div class="strip-icon">🚀</div>
+        <div class="strip-label">Open to Opportunities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section class="about-section" id="about">
+    <div class="section-inner">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-main">
+          <h2 class="section-heading">What's in<br><em>my mind</em></h2>
+          <p class="about-body">
+            Every code I write makes me find a better way to handle challenges in the surrounding society
+            — and how every person can contribute to the betterment of our community.
+          </p>
+          <p class="about-body">
+            I am a Software &amp; Web Developer with a passion for creating innovative solutions.
+            My background in Computer Science at AUCA University has given me a strong foundation
+            to tackle complex problems with elegant code.
+          </p>
+          <div class="about-tags">
+            <span>HTML / CSS</span>
+            <span>JavaScript</span>
+            <span>Problem Solving</span>
+            <span>UI Design</span>
+            <span>Rwanda 🇷🇼</span>
+          </div>
+        </div>
+        <div class="about-aside">
+          <div class="quote-card">
+            <div class="quote-mark">"</div>
+            <p>Code is not just instructions for a machine — it's a conversation with the future.</p>
+            <div class="quote-author">— Emmanuel</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"></div>
+            <div>
+              <div class="edu-degree">Bachelor's in Software Engineering</div>
+              <div class="edu-school">Adventist University of Central Africa (AUCA)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="section-inner">
+      <div class="section-label">Projects</div>
+      <h2 class="section-heading">Things I've <em>built</em></h2>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <h3 class="project-title">Eraston Management Book</h3>
+            <p class="project-desc">A full shop management system for tracking cassava sales, customer loans, scale measurements (Umunzani), and generating Excel/PDF summaries.</p>
+            <div class="project-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <a href="https://emb-manager-snowy.vercel.app/" class="project-link">View Project →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <h3 class="project-title">SmartGate Rwanda</h3>
+            <p class="project-desc">Digital visitor and material gate management system Help the administration streamline their operations. And this minimize the time spent on manual processes.</p>
+            <div class="project-stack">
+              <span>React</span><span>Node.js</span>
+            </div>
+          </div>
+          <a href="#" class="project-link">View Project →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <h3 class="project-title">NYUMBANI Marketplace</h3>
+            <p class="project-desc">Online marketplace for buying , selling and renting houses in Rwanda. By providing a centralized platform, it aims to facilitate seamless transactions and improve the real estate experience for users.</p>
+            <div class="project-stack">
+              <span>Python</span><span>SQL</span>
+            </div>
+          </div>
+          <a href="https://nyumbani-eta.vercel.app/" class="project-link">View Project →</a>
+        </article>
+
+      </div>
+      <p class="projects-empty" id="projects-empty" hidden>No projects match your search.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+
+    <div class="section-inner">
+      <div class="section-label">Skills</div>
+      <h2 class="section-heading">What I <em>work with</em></h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-bar" style="--w:90%"></span>HTML &amp; CSS</div>
+            <div class="skill-item"><span class="skill-bar" style="--w:80%"></span>JavaScript</div>
+            <div class="skill-item"><span class="skill-bar" style="--w:65%"></span>React</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-bar" style="--w:70%"></span>Node.js</div>
+            <div class="skill-item"><span class="skill-bar" style="--w:60%"></span>Python</div>
+            <div class="skill-item"><span class="skill-bar" style="--w:65%"></span>SQL</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tools</div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-bar" style="--w:85%"></span>Git / GitHub</div>
+            <div class="skill-item"><span class="skill-bar" style="--w:75%"></span>VS Code</div>
+            <div class="skill-item"><span class="skill-bar" style="--w:60%"></span>Figma</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="contact-text">
+        <div class="section-label">Contact</div>
+        <h2 class="section-heading">Let's <em>talk</em></h2>
+        <p class="contact-body">Have a project, opportunity, or just want to say hello? I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:niyitugenera123@gmail.com" class="contact-link">✉︎ niyitugenera123@gmail.com</a>
+          <a href="https://www.linkedin.com/in/emmanuel-niyitugenera-5a42b22b4/" class="contact-link">🔗 LinkedIn</a>
+          <a href="https://github.com/emma-niyitugenera" class="contact-link"> GitHub</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Amahoro Jean" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message</button>
+          <p class="form-success" id="form-success">✓ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Emmanuel<span>Site</span></div>
+      <div class="footer-nav">
+        <a href="./emma-index.html">Home</a>
+        <a href="#about">Who is Emma?</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Inbox</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Emmanuel NIYITUGENERA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="emma-scripts.js" defer></script>
+</body>
+</html>
